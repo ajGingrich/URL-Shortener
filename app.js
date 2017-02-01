@@ -9,6 +9,8 @@ var MongoClient = mongodb.MongoClient;
 
 var url = process.env.MONGOLAB_URI;
 
+console.log(url);
+
 // Use connect method to connect to the Server
 MongoClient.connect(url, function (err, db) {
     if (err) {
