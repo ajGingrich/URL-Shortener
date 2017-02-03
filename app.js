@@ -65,7 +65,8 @@ app.get('/new/:url*', function (req, res) {
                 db.close();
             }
         });
-        info = {original_url: input, short_url:  "http://localhost:5000/"  + randomNum};
+        //info = {original_url: input, short_url:  "http://localhost:5000/"  + randomNum};
+        info = {original_url: input, short_url:  'https://urlshortener320.herokuapp.com/'  + randomNum};
     }
     else {
         info = {error: "Please enter a URL in the correct format as shown in the instructions"}
